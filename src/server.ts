@@ -41,7 +41,7 @@ import * as path from 'path';
     }
     //get path of file from helper function
 
-    let filteredPath = await filterImageFromURL(image_url);
+    let filteredPath: string = await filterImageFromURL(image_url);
 
     let options = {
       root: '',
