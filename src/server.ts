@@ -31,7 +31,7 @@ import * as path from 'path';
 
   /**************************************************************************** */
 
-  app.get("/filteredimage", async (req, res) => {
+  app.get("/filteredimage", async (req:express.Request, res:express.Response) => {
     let { image_url } = req.query;
 
     //check to see if an image_url property was passed in
